@@ -1,0 +1,12 @@
+[
+  { "LogicalKey": "Digit1", "Physical": "D1", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit2", "Physical": "D2", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit3", "Physical": "D3", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit4", "Physical": "D4", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit5", "Physical": "D5", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit6", "Physical": "D6", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit7", "Physical": "D7", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit8", "Physical": "D8", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit9", "Physical": "D9", "WaitMinMs": 100, "WaitMaxMs": 150 },
+  { "LogicalKey": "Digit0", "Physical": "D0", "WaitMinMs": 100, "WaitMaxMs": 150 }
+]

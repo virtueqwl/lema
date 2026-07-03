@@ -1,0 +1,42 @@
+name: build-windows
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:    # 允许在 Actions 页面手动触发
+
+jobs:
+  build:
+    name: Build & Publish (win-x64)
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore
+      run: dotnet restore
+
+    - name: Build (Release)
+      run: dotnet build -c Release --no-restore
+
+    - name: Publish single-file
+      run: dotnet publish -c Release -r win-x64 --no-build \
+        -p:PublishSingleFile=true \
+        -p:SelfContained=true \
+        -p:IncludeNativeLibrariesForSelfExtract=true \
+        -p:EnableCompressionInSingleFile=true
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: GameInputTester-win-x64
+        path: bin/Release/net8.0-windows/win-x64/publish/GameInputTester.exe
+        if-no-files-found: error
+        retention-days: 30

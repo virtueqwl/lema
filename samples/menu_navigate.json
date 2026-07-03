@@ -1,0 +1,8 @@
+[
+  { "Logical": "Up",    "Physical": "Up",     "CooldownMs": 1500, "JitterMs": 0, "AfterTriggerWaitMinMs": 400, "AfterTriggerWaitMaxMs": 600, "Weight": 1 },
+  { "Logical": "Down",  "Physical": "Down",   "CooldownMs": 1500, "JitterMs": 0, "AfterTriggerWaitMinMs": 400, "AfterTriggerWaitMaxMs": 600, "Weight": 1 },
+  { "Logical": "Left",  "Physical": "Left",   "CooldownMs": 1500, "JitterMs": 0, "AfterTriggerWaitMinMs": 400, "AfterTriggerWaitMaxMs": 600, "Weight": 1 },
+  { "Logical": "Right", "Physical": "Right",  "CooldownMs": 1500, "JitterMs": 0, "AfterTriggerWaitMinMs": 400, "AfterTriggerWaitMaxMs": 600, "Weight": 1 },
+  { "Logical": "OK",    "Physical": "Return", "CooldownMs": 2000, "JitterMs": 0, "AfterTriggerWaitMinMs": 800, "AfterTriggerWaitMaxMs": 1200, "Weight": 1 },
+  { "Logical": "Pause", "Physical": "Escape", "CooldownMs": 3000, "JitterMs": 0, "AfterTriggerWaitMinMs": 600, "AfterTriggerWaitMaxMs": 900, "Weight": 1 }
+]

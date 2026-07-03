@@ -1,0 +1,12 @@
+[
+  { "Logical": "Digit1", "Physical": "D1", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit2", "Physical": "D2", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit3", "Physical": "D3", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit4", "Physical": "D4", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit5", "Physical": "D5", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit6", "Physical": "D6", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit7", "Physical": "D7", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit8", "Physical": "D8", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit9", "Physical": "D9", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 },
+  { "Logical": "Digit0", "Physical": "D0", "CooldownMs": 500, "JitterMs": 50, "AfterTriggerWaitMinMs": 100, "AfterTriggerWaitMaxMs": 200, "Weight": 1 }
+]

@@ -1,0 +1,7 @@
+[
+  { "Logical": "Basic",  "Physical": "Q",     "CooldownMs": 3000,  "JitterMs": 300,  "AfterTriggerWaitMinMs": 800,  "AfterTriggerWaitMaxMs": 1500, "Weight": 5 },
+  { "Logical": "Skill1", "Physical": "W",     "CooldownMs": 5000,  "JitterMs": 500,  "AfterTriggerWaitMinMs": 1000, "AfterTriggerWaitMaxMs": 2000, "Weight": 3 },
+  { "Logical": "Skill2", "Physical": "E",     "CooldownMs": 8000,  "JitterMs": 1000, "AfterTriggerWaitMinMs": 1200, "AfterTriggerWaitMaxMs": 2000, "Weight": 2 },
+  { "Logical": "Ult",    "Physical": "R",     "CooldownMs": 15000, "JitterMs": 1500, "AfterTriggerWaitMinMs": 1000, "AfterTriggerWaitMaxMs": 1800, "Weight": 1 },
+  { "Logical": "Dodge",  "Physical": "Space", "CooldownMs": 1000,  "JitterMs": 200,  "AfterTriggerWaitMinMs": 500,  "AfterTriggerWaitMaxMs": 1000, "Weight": 4 }
+]

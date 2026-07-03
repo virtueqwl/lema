@@ -105,7 +105,9 @@ public static class WinApi
         Keys.Home    => 0xE047, Keys.End   => 0xE04F,
         Keys.Insert  => 0xE052, Keys.Delete => 0xE053,
         Keys.PageUp  => 0xE049, Keys.PageDown => 0xE051,
-        Keys.Print   => 0xE02A, Keys.Pause => 0xE11D45,
+        Keys.Print   => 0xE02A,
+        // Keys.Pause 是 E1+1D+45 三字节转义序列，SendInput 一次只能发 1 个扫描码，跳过
+        // Keys.Pause => ...,
 
         // 小键盘
         Keys.NumPad0 => 0x52, Keys.NumPad1 => 0x4F, Keys.NumPad2 => 0x50,

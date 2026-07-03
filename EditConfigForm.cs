@@ -150,7 +150,7 @@ public class EditConfigForm : Form
         _status.BackColor = isError ? Color.MistyRose : SystemColors.ControlLight;
     }
 
-    protected override void FormClosing(FormClosingEventArgs e)
+    protected override void OnFormClosing(FormClosingEventArgs e)
     {
         if (_dirty && e.CloseReason == CloseReason.UserClosing)
         {

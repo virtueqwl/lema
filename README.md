@@ -141,7 +141,7 @@ dotnet publish -c Release -r win-x64 \
 push 代码到 GitHub，Actions 标签页会自动跑 build，下载 artifact 即可：
 
 1. 仓库设置页：Settings → Actions → General → Workflow permissions 选 "Read and write permissions"
-2. push 后看 https://github.com/\<owner\>/\<repo\>/actions
+2. push 后看 https://github.com/virtueqwl/lema/actions
 3. 最新 workflow run 底部 Artifacts → 下载 `GameInputTester-win-x64.zip`
 4. 解压得到 `GameInputTester.exe`，双击运行
 

@@ -37,7 +37,7 @@ public class Recorder : IDisposable
     [DllImport("kernel32.dll")]
     private static extern IntPtr GetModuleHandle(string? lpModuleName);
 
-    private readonly LowLevelKeyboardProc _proc;
+    private LowLevelKeyboardProc? _proc;
     private IntPtr _hookId = IntPtr.Zero;
     private long _startMs;
 

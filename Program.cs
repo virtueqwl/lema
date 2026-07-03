@@ -9,6 +9,8 @@ public class MainForm : Form
     [STAThread]
     static void Main()
     {
+        // 高 DPI 设置（从 app.manifest 移到代码，避开 WFAC010 警告）
+        Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
         Application.Run(new MainForm());
     }
 
@@ -375,15 +377,15 @@ public class MainForm : Form
         // 拷贝数据时也加锁（虽然调用方是 UI 线程，但保持一致性）
         List<MappingItem> items;
         lock (_mapLock) {
-            items = _mapping.AsEnumerable().Select(r => new MappingItem {
-                Logical                = (string)r["Logical"],
-                Physical               = ((Keys)r["Physical"]).ToString(),
-                CooldownMs             = (int)r["CooldownMs"],
-                JitterMs               = (int)r["JitterMs"],
-                AfterTriggerWaitMinMs  = (int)r["AfterTriggerWaitMinMs"],
-                AfterTriggerWaitMaxMs  = (int)r["AfterTriggerWaitMaxMs"],
-                Weight                 = (int)r["Weight"]
-            }).ToList();
+            items = _mapping.AsEnumerable().Select(r => new MappingItem(
+                (string)r["Logical"],
+                ((Keys)r["Physical"]).ToString(),
+                (int)r["CooldownMs"],
+                (int)r["JitterMs"],
+                (int)r["AfterTriggerWaitMinMs"],
+                (int)r["AfterTriggerWaitMaxMs"],
+                (int)r["Weight"]
+            )).ToList();
         }
         File.WriteAllText("settings.json",
             JsonSerializer.Serialize(items, new JsonSerializerOptions { WriteIndented = true }));

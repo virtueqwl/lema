@@ -84,7 +84,7 @@ public class MappingForm : Form
             Keys.LShiftKey, Keys.RShiftKey,
             Keys.LControlKey, Keys.RControlKey,
             Keys.LMenu, Keys.RMenu,
-            Keys.CapsLock, Keys.NumLock, Keys.ScrollLock
+            Keys.CapsLock, Keys.NumLock, Keys.Scroll
         });
         list.AddRange(new[] {
             Keys.Up, Keys.Down, Keys.Left, Keys.Right,

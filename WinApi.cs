@@ -95,7 +95,7 @@ public static class WinApi
         Keys.LShiftKey   => 0x2A, Keys.RShiftKey   => 0x36,
         Keys.LControlKey => 0x1D, Keys.RControlKey => 0xE01D, // 扩展
         Keys.LMenu       => 0x38, Keys.RMenu       => 0xE038, // 扩展
-        Keys.CapsLock    => 0x3A, Keys.NumLock     => 0x45, Keys.ScrollLock => 0x46,
+        Keys.CapsLock    => 0x3A, Keys.NumLock     => 0x45, Keys.Scroll      => 0x46,
 
         // 编辑 / 方向
         Keys.Escape  => 0x01, Keys.Tab  => 0x0F, Keys.Space => 0x39,
